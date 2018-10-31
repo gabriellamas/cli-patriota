@@ -1,0 +1,163 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#e7e7e7;
+}
+
+.noselect {
+-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+}
+
+.container{
+    position: relative;
+    width:700px;
+    height: auto;
+    margin:50px auto;
+    box-shadow: 0px 2px 15px rgba(0,0,0,0.4);
+    background:#fff;
+}
+input{
+    width:100%;
+}
+
+.input-personalizado{
+    border:none;
+    background:none;
+    outline: none;
+}
+
+.input-texto{
+    font-size:16px;
+}
+
+li{
+    margin-left:30px;
+}
+
+.titulo-area{
+    border-radius:5px;
+    background:url('https://static.vecteezy.com/system/resources/previews/000/101/237/non_2x/free-abstract-background-11-vector.jpg') no-repeat center center;
+}
+
+.input-titulo{
+    width:100%;
+    font-size:45px;
+    padding:45px 25px;
+    color:#fff;
+    background: rgba(0,0,0,0.6);
+}   
+
+.input-titulo::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #e7e7e7;
+    opacity: 1; /* Firefox */
+}
+
+.input-titulo:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #e7e7e7;
+}
+
+.input-titulo::-ms-input-placeholder { /* Microsoft Edge */
+    color: #e7e7e7;
+}
+
+.corpo-area{
+    position: relative;
+    padding:20px 25px;
+}
+.corpo-area h2{
+    font-weight: bolder;
+    margin-bottom:5px;
+    color:#464646;
+}
+
+.opcao{
+    display:flex;
+}
+
+.background-areas{
+    position: absolute;
+    z-index: 100;
+    top:0px;
+    right:-160px;
+    display:flex;
+    flex-direction: column;
+}
+.background-areas label{
+    padding:10px;
+    color:#727272;
+    font-weight:600;
+    cursor:pointer;
+    text-decoration: underline;
+}
+
+.background-areas input{
+    display: none;
+}
+
+.background-areas input + label{
+    display:flex;
+    align-items: center;
+}
+
+.background-areas input + label span{
+    display:block;
+    width:20px;
+    height: 20px;
+    background:none;
+    border:2px solid #a8a8a8;
+    margin-right:5px;
+    border-radius:50%;
+}
+
+.background-areas input:checked + label span{
+    background:#155181;
+}
+
+.bt-adicionar-detalhe, .bt-adicionar-requisito{
+    position: absolute;
+    top:15px;
+    left:-195px;
+    background:none;
+    border:none;
+    text-decoration: underline;
+    outline:none;
+    cursor:pointer;
+    color:#727272;
+    font-weight:600;
+    font-size: 18px;
+}
+
+.bt-adicionar-requisito{
+    left:-212px;
+}
+
+.delete-line{
+    position: absolute;
+    left:-40px;
+    top:-1px;
+    background:none;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    opacity: 0.5;
+}
+
+.gerar-imagem{
+    margin:0px auto;
+    display:block;
+    padding:10px 40px;
+    font-size:22px;
+    background: none;
+    border:none;
+    background: #1f479e;
+    color:#fff;
+    cursor:pointer;
+    border-radius:5px;
+    border-bottom:3px solid #0b214e;
+    outline:none;
+}
